@@ -1,4 +1,4 @@
-## Parsing URLs for Firewall Squid Proxy Migration
+## Parsing URLs for Firewall Squid Proxy Migration. 
 import csv
 from urllib.parse import urlparse
 
@@ -28,7 +28,7 @@ print('Below is the parsed URLs\n')
 newURLS = ([s.strip('http://') for s in URLS]) # remove http:// from list values
 newURLS = list(dict.fromkeys(newURLS))  # remove duplicates
 
-print('this is a test\n')
+
 print(newURLS)
 
 with open("********************","w") as f:    #put your desired path where you want the output .csv to be saved
